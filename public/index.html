@@ -214,8 +214,8 @@
         ]);
 
       axios.get("http://localhost:3000/budget").then((res) => {
-        var data = res.data.myBudget.map((obj) => {
-          return { label: obj.title, value: obj.budget };
+        var data = res.data.map((obj) => {
+          return { label: obj.title, value: obj.budget, color: obj.color };
         });
         change(data);
       });
@@ -230,7 +230,7 @@
           .enter()
           .insert("path")
           .style("fill", function (d) {
-            return color(d.data.label);
+            return d.data.color;
           })
           .attr("class", "slice");
 
@@ -338,7 +338,7 @@
         datasets: [
           {
             data: [],
-            backgroundColor: ["#ffcd56", "#ff6384", "#36a2eb", "#fd6b19"],
+            backgroundColor: [], // empty array to be filled dynamically
           },
         ],
         labels: [],
@@ -354,11 +354,12 @@
 
       function getBudget() {
         axios.get("http://localhost:3000/budget").then(function (res) {
-          for (var i = 0; i < res.data.myBudget.length; i++) {
-            dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-            dataSource.labels[i] = res.data.myBudget[i].title;
-            createChart();
+          for (var i = 0; i < res.data.length; i++) {
+            dataSource.datasets[0].data[i] = res.data[i].budget;
+            dataSource.labels[i] = res.data[i].title;
+            dataSource.datasets[0].backgroundColor[i] = res.data[i].color; // Assign color from API response
           }
+          createChart();
         });
       }
 

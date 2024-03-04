@@ -1,0 +1,104 @@
+{
+  "myBudget": [
+    {
+      "title": "Eat out",
+      "budget": 25,
+      "color": "#76b39d"
+    },
+    {
+      "title": "Medical Expenses",
+      "budget": 50,
+      "color": "#c492b1"
+    },
+    {
+      "title": "Car Insurance",
+      "budget": 30,
+      "color": "#5f6d7d"
+    },
+    {
+      "title": "Shopping",
+      "budget": 100,
+      "color": "#a28ca3"
+    },
+    {
+      "title": "Health Insurance",
+      "budget": 25,
+      "color": "#b18c83"
+    },
+    {
+      "title": "Rent",
+      "budget": 275,
+      "color": "#8eacb6"
+    },
+    {
+      "title": "Grocery",
+      "budget": 110,
+      "color": "#91a5a1"
+    },
+    {
+      "title": "Entertainment",
+      "budget": 50,
+      "color": "#6d87a5"
+    },
+    {
+      "title": "Travel",
+      "budget": 200,
+      "color": "#9f7c8d"
+    },
+    {
+      "title": "Utilities",
+      "budget": 80,
+      "color": "#b0938a"
+    },
+    {
+      "title": "Phone Bill",
+      "budget": 40,
+      "color": "#9e7e89"
+    },
+    {
+      "title": "Internet Bill",
+      "budget": 35,
+      "color": "#8d9a91"
+    },
+    {
+      "title": "Gym Membership",
+      "budget": 30,
+      "color": "#b9b3a9"
+    },
+    {
+      "title": "Coffee",
+      "budget": 20,
+      "color": "#7e969e"
+    },
+    {
+      "title": "Books",
+      "budget": 40,
+      "color": "#b8b09f"
+    },
+    {
+      "title": "Movies",
+      "budget": 30,
+      "color": "#a49f8e"
+    },
+    {
+      "title": "Music",
+      "budget": 15,
+      "color": "#7395b5"
+    },
+    {
+      "title": "Gifts",
+      "budget": 50,
+      "color": "#a4a798"
+    },
+    {
+      "title": "Hobbies",
+      "budget": 40,
+      "color": "#7496a2"
+    },
+    {
+      "title": "Miscellaneous",
+      "budget": 75,
+      "color": "#a69083"
+    }
+  ]
+}
